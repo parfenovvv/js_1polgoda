@@ -1,0 +1,16 @@
+<script>
+// написать функцию которая принмает массив любых целых чисел и возвращает новый массив из элементов переданного 
+// массива кратных пяти 
+
+let arr=Array.from(Array(10), ()=>{return Math.round(Math.random()*100-50)}); 
+console.log(arr.toString()); 
+function kratnye(arr){
+     return arr.filter(num => num % 5 == 0);
+    }
+
+    console.log(kratnye(arr).toString()); 
+
+
+
+
+</script>

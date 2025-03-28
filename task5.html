@@ -1,0 +1,21 @@
+<script>
+// написать функцию которая принимает массив чисел и возвращает среднее ариметическое 
+
+let arr=Array.from(Array(10), ()=>{return Math.round(Math.random()*10)}); 
+console.log(arr.toString());
+
+
+
+let summa=arr.reduce((summ, value)=>summ+value, 0); 
+console.log(summa.toString()); 
+
+
+function srArifm(arr){
+    return Math.round((summa / arr.length)*10)/10; 
+}
+
+console.log(srArifm(arr)); 
+
+
+
+</script>

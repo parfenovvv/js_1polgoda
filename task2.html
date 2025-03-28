@@ -1,0 +1,18 @@
+<script>
+// дан массив с числами. найти сумму тех элементов , которые больше нуля и меньше 10 
+
+let arr=Array.from(Array(10), ()=>{return Math.round(Math.random()*20-10)}); 
+console.log(arr.toString()); 
+
+let newArr=arr.filter(num=>num>0 && num<10); 
+console.log(newArr.toString());
+
+function summa(accumulator, element){
+    return accumulator + element; 
+}; 
+
+let itogo = newArr.reduce(summa, 0); 
+console.log(itogo); 
+
+
+</script>

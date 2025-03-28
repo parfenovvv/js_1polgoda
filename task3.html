@@ -1,0 +1,16 @@
+<script>
+// Написать функцию, которая принимает массив любых целых исел и возвращает истину, если все элементы четные.
+// если хотя бы один элемент нечетный, возвращается false 
+
+let arr=Array.from(Array(4), ()=>{return Math.round(Math.random()*5)}); 
+console.log(arr.toString()); 
+function allChetnye(arr){
+     return arr.every(num => num % 2 == 0);
+    }
+
+    console.log(allChetnye(arr)); 
+
+
+
+
+</script>

@@ -1,0 +1,51 @@
+<script>
+//вычислить сумму квадратных корней для всех четных чисел целочисленного массива 
+
+// function findChetnoe(elem,krn){
+// if (elem%2===0)
+// krn+=(Math. sqrt(elem)); 
+// return krn; 
+// }
+
+// let arr=Array.from(Array(10), ()=>{return Math.round(Math.random()*25)})
+// console.log(arr.toString()); 
+
+// let summa = arr.reduce((sum, num)=>sum+num, 0); 
+// let koren = arr.reduce(findChetnoe,0); 
+// console.log(summa); 
+// console.log(koren); 
+
+
+// другой вариант 
+let arr = Array.from(Array(10), ()=>{return Math.round(Math.random()*10)}); 
+console.log(arr.toString()); 
+
+let newArr=arr.filter(num=>num%2==0); 
+console.log(newArr.toString()); 
+
+function korni(accumulator, element){
+    return accumulator + Math.sqrt(element); 
+    };
+
+
+let summa = newArr.reduce(korni, 0); 
+console.log(summa); 
+
+// function findNegative(cnt,elem) 
+//     {
+//         if (elem<0)
+//             cnt++;
+//         return cnt;
+//     }
+
+//     let arr = Array.from(Array(10),()=>{return Math.round(Math.random()*20-10)});
+//     console.log(arr.toString());
+//     let summa = arr.reduce((sum, elem) => sum + elem, 0);
+//     let count = arr.reduce(findNegative,0);
+//     console.log(`summa=${summa}`);
+//     console.log(`count=${count}`);
+
+
+
+
+</script>
