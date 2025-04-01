@@ -1,0 +1,17 @@
+<script>
+// дан массив со строками оставьте в этом массиве только те строки , которые начинаются на http://
+
+let arr = [
+'https://www.youtube.com/',
+'https://www.google.nl/',
+'vk.com/?u=2&to=L2luZGV4LnBocA--',
+]; 
+
+
+let newArr=arr.filter(str=>str.startsWith('https:')).toString(); 
+console.log(newArr); 
+
+
+
+
+</script>

@@ -1,0 +1,17 @@
+<script>
+// написать функцию которая принимает массив чисел и переносит первый элемент массива в конец; 
+
+
+let arr=[1,2,3,4,5,6,7]; 
+
+
+function konec() {
+    let elem =arr.shift(); 
+    arr.push(elem);
+    return arr;  
+}
+
+console.log(arr.toString()); 
+console.log(konec(arr).toString()); 
+
+</script>

@@ -1,0 +1,29 @@
+<script>
+// запросите у пользователя число и сформируйте на его основе другое число , каждая цифра которого больше на 
+// единицу. если попалась 9 то заменяется на 10.
+
+// let num = prompt("Введите число"); 
+// let num2=Number(num)+1
+// if (!isNaN(num))
+// {
+//     console.log (num2) ; 
+// };
+ 
+let num = prompt ("Введите число"); 
+let numArray=num.toString().split('').map(Number);
+let newNum=numArray.map(elem=>Number(elem)+1).toString(); 
+
+console.log(newNum); 
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
